@@ -7,6 +7,8 @@ GFF_file = open(sys.argv[1],'r')
 GFFC = GFF_file.readlines()
 GFF_file.close()
 
+## USAGE: python get_geneFromGFF.py GFF_Pseudomonas_aeruginosa.gff >P_ae.gene
+
 
 for i in GFFC:
     cols = i.rstrip().split("\t")
