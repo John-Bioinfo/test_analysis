@@ -10,6 +10,8 @@ my $infile=shift;
 open(my $IN, "< $infile") || die("Can not open the GFF file! $! \n");
 
 my $meta_info;
+my $geneF;
+my @array = ();
 
 while(<$IN>){
 
@@ -18,9 +20,9 @@ while(<$IN>){
     if ($line =~ m/^#/){
         next;
     }
-    my @array = split (/\t/, $line);
-    my $meta_info = $array[8] ;
-    my $geneF = $array[2];
+    @array = split (/\t/, $line);
+    $meta_info = $array[8] ;
+    $geneF = $array[2];
     
     if ($geneF eq "gene"){
         my $info = m/.*GeneID:(\d+?)[;,].*Name=(.*?);[\w\W]*/;
