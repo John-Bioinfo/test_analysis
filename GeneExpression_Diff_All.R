@@ -130,6 +130,35 @@ for (CancerProject in CancerProjects){
             print(paste(CancerProject, "does not contain TP and NT samples!", sep=" "))
         }
     }
+            
+            
+  ##   => Add clinical information to samples
+  ##   Add FFPE information. More information at:
+  ##  => https://cancergenome.nih.gov/cancersselected/biospeccriteria
+  ##  => http://gdac.broadinstitute.org/runs/sampleReports/latest/FPPP_FFPE_Cases.html
+
+  ##  => Adding subtype information to samples
+  ##  Subtype information from:doi:10.1038/nature11404
+  ##  Downloading genome information (try:0) Using: Human genes (GRCh38.p10)
+  ##  Loading from disk
+  ##  From the 60483 genes we couldn't map 3520
+  ##  Saving file:D:\R-Code\TCGA_data\TCGA-LUSC_Norm_results.rda
+  ##  File saved
+  ##  I Need about  36 seconds for this Complete Normalization Upper Quantile  [Proces
+  ##  sing 80k elements /s]
+  ##  Step 1 of 4: newSeqExpressionSet ...
+  ##  Step 2 of 4: withinLaneNormalization ...
+  ##  Step 3 of 4: betweenLaneNormalization ...
+  ##  Step 4 of 4: .quantileNormalization ...
+    ##  Batch correction skipped since no factors provided
+    ##  ----------------------- DEA -------------------------------
+    ##  there are Cond1 type Normal in  25 samples
+    ##  there are Cond2 type Tumor in  25 samples
+    ##  there are  17428 features as miRNA or genes
+    ##  I Need about  29 seconds for this DEA. [Processing 30k elements /s]
+    ##  Batch submitting query [====================-----------]  64% eta:  1m
+            
+            
 }
 
 
