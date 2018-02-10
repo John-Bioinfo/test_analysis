@@ -4,6 +4,25 @@ use strict;
 use warnings;
 
 die "perl $0 <Ref_fa> <input_txt> <output> " unless @ARGV == 3;
+
+## perl test_nucleotides_frequency_calc.pl test.fa length_5.txt length_freq.txt
+## test.fa is chromosome sequence or other longer sequences in fasta format
+## length_5.txt is 5bp nucleotides in fasta format
+
+##
+##>5_5
+##AAATA
+##>5_6
+##AAATT
+##>5_7
+##AAATC
+##>5_8
+##AAATG
+##>5_9
+##AAACA
+##
+## length_freq.txt is output file
+
 my $Ref_fa = shift;
 my $in = shift;
 my $out = shift;
@@ -42,11 +61,11 @@ while($line=<IN>){
     chomp $line;
     chomp $sequence;
      #foreach $chr (@keys){
+     
      my $count = keys %hash;
-     #print $count;
+
      for(my $j=0;$j<=$count-1;$j++){
-     #print $hash{$chr};
-          #print $hash{$keys[$j]}."\n";         
+        
           $i=0;
           my $pos = 0;
           my $position = 0;
@@ -54,24 +73,16 @@ while($line=<IN>){
             
               $pos = index($hash{$keys[$j]},$sequence,$position);
 #              print $hash{$keys[$j]}."\n";
-#            print $sequence."\n";
-#            print $pos."\n";
-            #print $hash{$chr}."\n";
-            #print $sequence."\n";
+
             if($pos == -1){
                last;
-              }  #else{
+              }  
               $i++;
-               #print $pos."\n";
+
               $position = $pos + 5;
-#              #print $i;
-#           }
-#          #$a += $i;
+
          }
-#          $a += $i;
-#          chomp($keys[$j]);
-#          chomp($line);
-#          chomp($sequence);
+
           print OUT $line."\t".$sequence."\t".$keys[$j]."\t".$i."\n";
 
       }
