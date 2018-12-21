@@ -1,6 +1,7 @@
 process data as follows
 
-``` python parseMAF.py > genenames.txt
+``` 
+python parseMAF.py > genenames.txt
 ```
 
 - kegg enrichment
