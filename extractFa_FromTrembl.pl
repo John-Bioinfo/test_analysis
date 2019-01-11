@@ -5,6 +5,8 @@ use warnings;
 use Getopt::Long;
 use File::Basename;
 
+# fork from  https://github.com/SchwarzEM/ems_perl "integr8_uniprot"
+
 # Program: uniprot_to_clean_tfa.pl -- Erich Schwarz <emsch@its.caltech.edu>, 7/23/2012.
 # Purpose: Convert EBI.dat (SwissProt or TREMBL) to FASTA with good headers, optionally, prepend species_specific prefixes to sequence names.
 # perl %prog.pl -i test.dat -p EMBL > a.fa
