@@ -6,4 +6,9 @@ or
 
 ## Count Reads at certain genome position
 
-- python extract_sites.py *.dat
+- python extract_sites.py *.dat 
+
+or 
+
+- python extract_sites_new.py *.dat
+- python generate_html.py test_con_mut_reads.txt > test1.html
