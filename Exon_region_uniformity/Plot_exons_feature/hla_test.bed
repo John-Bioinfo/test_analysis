@@ -1,0 +1,8 @@
+chr6	29910318	29910417	+	ensembl_gn=HLA-A;ensembl_gene_id=ENSG00000206503;ensembl_tx=ENST00000376802;identifier=HLA-A;ensembl_tx=ENST00000376809;ensembl_tx=ENST00000396634;ensembl_tx=ENST00000376806;
+chr6	29910534	29910803	+	ensembl_gn=HLA-A;ensembl_gene_id=ENSG00000206503;ensembl_tx=ENST00000376806;identifier=HLA-A;ensembl_tx=ENST00000396634;ensembl_tx=ENST00000376809;ensembl_tx=ENST00000376802;
+chr6	29911045	29911320	+	ensembl_gn=HLA-A;ensembl_gene_id=ENSG00000206503;ensembl_tx=ENST00000376809;identifier=HLA-A;ensembl_tx=ENST00000376806;ensembl_tx=ENST00000376802;ensembl_tx=ENST00000396634;
+chr6	29911899	29912174	+	ensembl_gn=HLA-A;ensembl_gene_id=ENSG00000206503;ensembl_tx=ENST00000376809;identifier=HLA-A;ensembl_tx=ENST00000376806;ensembl_tx=ENST00000376802;ensembl_tx=ENST00000396634;
+chr6	29912277	29912411	+	ensembl_gn=HLA-A;ensembl_gene_id=ENSG00000206503;ensembl_tx=ENST00000396634;identifier=HLA-A;ensembl_tx=ENST00000376809;ensembl_tx=ENST00000376806;
+chr6	29912803	29912902	+	ensembl_gn=HLA-A;ensembl_gene_id=ENSG00000206503;ensembl_tx=ENST00000376806;identifier=HLA-A;ensembl_tx=ENST00000396634;ensembl_tx=ENST00000376809;
+chr6	29912985	29913084	+	ensembl_gn=HLA-A;ensembl_gene_id=ENSG00000206503;ensembl_tx=ENST00000376806;identifier=HLA-A;ensembl_tx=ENST00000376809;ensembl_tx=ENST00000396634;
+chr6	29913179	29913278	+	ensembl_gn=HLA-A;ensembl_gene_id=ENSG00000206503;ensembl_tx=ENST00000376806;identifier=HLA-A;ensembl_tx=ENST00000376809;ensembl_tx=ENST00000396634;ensembl_tx=ENST00000376802;
