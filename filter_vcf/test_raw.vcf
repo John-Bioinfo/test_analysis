@@ -1,0 +1,115 @@
+##fileformat=VCFv4.1
+##samtoolsVersion=0.1.19-44428cd
+##reference=file:///data/hsa/hg19/hg19_genome.fa
+##contig=<ID=chr10,length=135534747>
+##contig=<ID=chr11,length=135006516>
+##contig=<ID=chr12,length=133851895>
+##contig=<ID=chr13,length=115169878>
+##contig=<ID=chr14,length=107349540>
+##contig=<ID=chr15,length=102531392>
+##contig=<ID=chr16,length=90354753>
+##contig=<ID=chr17,length=81195210>
+##contig=<ID=chr18,length=78077248>
+##contig=<ID=chr19,length=59128983>
+##contig=<ID=chr1,length=249250621>
+##contig=<ID=chr20,length=63025520>
+##contig=<ID=chr21,length=48129895>
+##contig=<ID=chr22,length=51304566>
+##contig=<ID=chr2,length=243199373>
+##contig=<ID=chr3,length=198022430>
+##contig=<ID=chr4,length=191154276>
+##contig=<ID=chr5,length=180915260>
+##contig=<ID=chr6,length=171115067>
+##contig=<ID=chr7,length=159138663>
+##contig=<ID=chr8,length=146364022>
+##contig=<ID=chr9,length=141213431>
+##contig=<ID=chrM,length=16571>
+##contig=<ID=chrX,length=155270560>
+##contig=<ID=chrY,length=59373566>
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="# high-quality ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Root-mean-square mapping quality of covering reads">
+##INFO=<ID=FQ,Number=1,Type=Float,Description="Phred probability of all samples being the same">
+##INFO=<ID=AF1,Number=1,Type=Float,Description="Max-likelihood estimate of the first ALT allele frequency (assuming HWE)">
+##INFO=<ID=AC1,Number=1,Type=Float,Description="Max-likelihood estimate of the first ALT allele count (no HWE assumption)">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=IS,Number=2,Type=Float,Description="Maximum number of reads supporting an indel and fraction of indel reads">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=G3,Number=3,Type=Float,Description="ML estimate of genotype frequencies">
+##INFO=<ID=HWE,Number=1,Type=Float,Description="Chi^2 based HWE test P-value based on G3">
+##INFO=<ID=CLR,Number=1,Type=Integer,Description="Log ratio of genotype likelihoods with and without the constraint">
+##INFO=<ID=UGT,Number=1,Type=String,Description="The most probable unconstrained genotype configuration in the trio">
+##INFO=<ID=CGT,Number=1,Type=String,Description="The most probable constrained genotype configuration in the trio">
+##INFO=<ID=PV4,Number=4,Type=Float,Description="P-values for strand bias, baseQ bias, mapQ bias and tail distance bias">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=PC2,Number=2,Type=Integer,Description="Phred probability of the nonRef allele frequency in group1 samples being larger (,smaller) than in group2.">
+##INFO=<ID=PCHI2,Number=1,Type=Float,Description="Posterior weighted chi^2 P-value for testing the association between group1 and group2 samples.">
+##INFO=<ID=QCHI2,Number=1,Type=Integer,Description="Phred scaled PCHI2.">
+##INFO=<ID=PR,Number=1,Type=Integer,Description="# permutations yielding a smaller PCHI2.">
+##INFO=<ID=QBD,Number=1,Type=Float,Description="Quality by Depth: QUAL/#reads">
+##INFO=<ID=RPB,Number=1,Type=Float,Description="Read Position Bias">
+##INFO=<ID=MDV,Number=1,Type=Integer,Description="Maximum number of high-quality nonRef reads in samples">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias (v2) for filtering splice-site artefacts in RNA-seq data. Note: this version may be broken.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GL,Number=3,Type=Float,Description="Likelihoods for RR,RA,AA genotypes (R=ref,A=alt)">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="# high-quality bases">
+##FORMAT=<ID=DV,Number=1,Type=Integer,Description="# high-quality non-reference bases">
+##FORMAT=<ID=SP,Number=1,Type=Integer,Description="Phred-scaled strand bias P-value">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##INFO=<ID=PR,Number=1,Type=Integer,Description="# permutations yielding a smaller PCHI2.">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	14006_A.sorted.bam	14006_B.sorted.bam	CALL2015070101_D1.sorted.bam	CALL2015070102_D1.sorted.bam	CALM2015070101_D1.sorted.bam
+chr10	60263	.	A	C	95	.	DP=50;VDB=2.316651e-01;RPB=4.895619e-01;AF1=1;AC1=10;DP4=5,3,25,17;MQ=20;FQ=-26.8;PV4=1,0.44,1,0.28	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:0,0,0:0:3	1/1:127,9,0:50:9	0/1:0,0,0:0:3	0/1:0,0,0:0:3
+chr10	61372	.	CA	C	22.5	.	INDEL;IS=20,0.047059;DP=74;VDB=3.280031e-01;AF1=0.5;AC1=5;DP4=22,32,10,10;MQ=20;FQ=25.5;PV4=0.6,6.6e-07,1,1	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:0,0,0:0:3	0/1:60,0,140:74:61	0/1:0,0,0:0:3	0/1:0,0,0:0:3
+chr10	67774	.	G	C	3.64	.	DP=3;VDB=4.800000e-02;RPB=8.745357e-01;AF1=0.5205;AC1=5;DP4=0,1,1,1;MQ=20;FQ=-15.8;PV4=1,0.33,1,0.33	GT:PL:DP:GQ	0/0:0,0,0:0:4	0/0:0,0,0:0:4	0/1:31,0,11:3:19	0/0:0,0,0:0:4	0/0:0,0,0:0:4
+chr10	93945	.	G	A	6.98	.	DP=7;VDB=3.131090e-02;RPB=0.000000e+00;AF1=0.5;AC1=5;DP4=2,2,2,1;MQ=20;FQ=9.46;PV4=1,1,1,1	GT:PL:DP:GQ	0/0:0,0,0:0:3	0/0:0,0,0:0:3	0/1:36,0,53:7:35	0/0:0,0,0:0:3	0/0:0,0,0:0:3
+chr10	95662	.	G	C	20.1	.	DP=8;VDB=7.931840e-02;RPB=-6.486824e-01;AF1=0.5;AC1=5;DP4=2,1,3,1;MQ=20;FQ=9.39;PV4=1,1,1,1	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:0,0,0:0:3	0/1:50,0,36:7:41	0/1:0,0,0:0:3	0/1:0,0,0:0:3
+chr10	95949	.	C	T	38	.	DP=9;VDB=6.459049e-02;RPB=3.960091e-01;AF1=0.5002;AC1=5;DP4=1,2,1,5;MQ=20;FQ=5.47;PV4=1,1,1,1	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:0,0,0:0:3	0/1:68,0,31:9:36	0/1:0,0,0:0:3	0/1:0,0,0:0:3
+chr10	106126	.	T	C	7.8	.	DP=7;VDB=6.718756e-02;RPB=-6.486824e-01;AF1=0.5;AC1=5;DP4=2,2,1,2;MQ=20;FQ=10.3;PV4=1,0.12,1,0.46	GT:PL:DP:GQ	0/0:0,0,0:0:3	0/0:0,0,0:0:3	0/1:37,0,53:7:36	0/0:0,0,0:0:3	0/0:0,0,0:0:3
+chr10	112473	.	T	C	32	.	DP=9;VDB=1.339231e-02;RPB=2.268540e-01;AF1=0.5;AC1=5;DP4=2,2,3,2;MQ=20;FQ=20.9;PV4=1,1,1,0.45	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:0,0,0:0:3	0/1:62,0,48:9:53	0/1:0,0,0:0:3	0/1:0,0,0:0:3
+chr10	112522	.	T	C	21	.	DP=8;VDB=2.861637e-02;RPB=5.314005e-01;AF1=0.5;AC1=5;DP4=2,2,2,2;MQ=20;FQ=21;PV4=1,1,1,0.1	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:0,0,0:0:3	0/1:51,0,51:8:50	0/1:0,0,0:0:3	0/1:0,0,0:0:3
+chr10	113814	.	A	T	4.78	.	DP=6;VDB=4.340713e-02;RPB=1.579671e+00;AF1=0.5;AC1=5;DP4=2,1,2,1;MQ=20;FQ=5.09;PV4=1,0.39,1,0.0022	GT:PL:DP:GQ	0/0:0,0,0:0:4	0/0:0,0,0:0:4	0/1:33,0,34:6:31	0/0:0,0,0:0:4	0/0:0,0,0:0:4
+chr10	118394	.	A	T	3.64	.	DP=3;VDB=6.080000e-02;RPB=-8.745357e-01;AF1=0.5205;AC1=5;DP4=1,0,1,1;MQ=20;FQ=-15.8;PV4=1,1,1,1	GT:PL:DP:GQ	0/0:0,0,0:0:4	0/0:0,0,0:0:4	0/1:31,0,11:3:19	0/0:0,0,0:0:4	0/0:0,0,0:0:4
+chr10	118395	.	G	A	3.64	.	DP=3;VDB=6.240000e-02;RPB=-8.745357e-01;AF1=0.5205;AC1=5;DP4=1,0,1,1;MQ=20;FQ=-15.8;PV4=1,1,1,1	GT:PL:DP:GQ	0/0:0,0,0:0:4	0/0:0,0,0:0:4	0/1:31,0,11:3:19	0/0:0,0,0:0:4	0/0:0,0,0:0:4
+chr10	118532	.	G	A	54.3	.	DP=5;VDB=4.892283e-02;AF1=1;AC1=10;DP4=0,0,2,3;MQ=20;FQ=-27.2	GT:PL:DP:GQ	1/1:0,0,0:0:3	1/1:0,0,0:0:3	1/1:87,15,0:5:16	1/1:0,0,0:0:3	1/1:0,0,0:0:3
+chr10	127176	.	A	C	52.3	.	DP=5;VDB=5.219150e-02;AF1=1;AC1=10;DP4=0,0,3,2;MQ=20;FQ=-27.2	GT:PL:DP:GQ	1/1:0,0,0:0:3	1/1:0,0,0:0:3	1/1:0,0,0:0:3	1/1:85,15,0:5:16	1/1:0,0,0:0:3
+chr10	150960	.	T	C	9.31	.	DP=2;VDB=3.200000e-02;AF1=1;AC1=10;DP4=0,0,1,1;MQ=20;FQ=-26.3	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:0,0,0:0:3	1/1:40,6,0:2:5	0/1:0,0,0:0:3	0/1:0,0,0:0:3
+chr10	169560	.	G	T	6.02	.	DP=2;VDB=4.640000e-02;AF1=1;AC1=10;DP4=0,0,0,2;MQ=20;FQ=-26.3	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:0,0,0:0:3	1/1:36,6,0:2:4	0/1:0,0,0:0:3	0/1:0,0,0:0:3
+chr10	172995	.	A	C	41.8	.	DP=4;VDB=3.799346e-02;AF1=1;AC1=10;DP4=0,0,2,2;MQ=20;FQ=-28.4	GT:PL:DP:GQ	1/1:0,0,0:0:4	1/1:20,3,0:1:7	1/1:56,9,0:3:12	1/1:0,0,0:0:4	1/1:0,0,0:0:4
+chr10	175308	.	G	A	38.8	.	DP=4;VDB=7.792673e-02;AF1=1;AC1=10;DP4=0,0,2,2;MQ=20;FQ=-28.4	GT:PL:DP:GQ	1/1:0,0,0:0:4	1/1:20,3,0:1:7	1/1:53,9,0:3:12	1/1:0,0,0:0:4	1/1:0,0,0:0:4
+chr10	175653	.	C	T	24.7	.	DP=12;VDB=7.664160e-02;RPB=-1.219376e+00;AF1=0.2931;AC1=3;DP4=4,2,4,1;MQ=20;FQ=26.2;PV4=1,1,1,1	GT:PL:DP:GQ	0/0:0,6,40:2:8	0/0:0,0,0:0:4	0/1:57,0,45:9:51	0/0:0,0,0:0:4	0/0:0,0,0:0:4
+chr10	177393	.	C	T	58.5	.	DP=5;VDB=9.468006e-02;AF1=1;AC1=10;DP4=0,0,3,2;MQ=20;FQ=-28.5	GT:PL:DP:GQ	1/1:0,0,0:0:5	1/1:0,0,0:0:5	1/1:73,12,0:4:15	1/1:20,3,0:1:7	1/1:0,0,0:0:5
+chr10	177585	.	T	C	34.4	.	DP=8;VDB=3.170820e-02;RPB=-4.570987e-01;AF1=0.6012;AC1=6;DP4=2,1,4,1;MQ=20;FQ=8.14;PV4=1,1,1,0.4	GT:PL:DP:GQ	0/1:0,3,20:1:3	0/1:0,0,0:0:3	0/1:36,0,25:5:27	1/1:20,3,0:1:3	1/1:20,3,0:1:3
+chr10	177718	.	T	C	19.3	.	DP=9;VDB=7.268232e-02;RPB=1.342535e+00;AF1=0.3993;AC1=4;DP4=5,0,2,2;MQ=20;FQ=21.3;PV4=0.17,0.44,1,1	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/0:0,3,20:1:4	0/1:39,0,34:6:37	0/0:0,3,20:1:4	0/1:20,3,0:1:4
+chr10	177734	.	T	C	6.59	.	DP=8;VDB=6.280960e-02;RPB=-1.551181e+00;AF1=0.7217;AC1=7;DP4=4,1,3,0;MQ=20;FQ=11.2;PV4=1,1,1,0.11	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:20,3,0:1:3	0/1:2,0,63:6:6	0/1:20,3,0:1:3	0/1:0,0,0:0:3
+chr10	177743	.	T	C	6.59	.	DP=8;VDB=6.280960e-02;RPB=-1.551181e+00;AF1=0.7217;AC1=7;DP4=4,1,3,0;MQ=20;FQ=11.2;PV4=1,1,1,1	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:20,3,0:1:3	0/1:2,0,60:6:6	0/1:20,3,0:1:3	0/1:0,0,0:0:3
+chr10	178434	.	T	G	25.3	.	DP=3;VDB=5.983360e-02;AF1=1;AC1=10;DP4=0,0,1,2;MQ=20;FQ=-28.7	GT:PL:DP:GQ	1/1:0,0,0:0:5	1/1:20,3,0:1:7	1/1:20,3,0:1:7	1/1:20,3,0:1:7	1/1:0,0,0:0:5
+chr10	183151	.	T	C	999	.	DP=27;VDB=2.505540e-01;AF1=1;AC1=10;DP4=0,0,15,11;MQ=20;FQ=-34.3	GT:PL:DP:GQ	1/1:40,6,0:2:17	1/1:56,9,0:3:20	1/1:176,51,0:17:62	1/1:69,12,0:4:23	1/1:0,0,0:0:11
+chr10	185171	.	G	T	999	.	DP=17;VDB=1.759485e-01;AF1=1;AC1=10;DP4=0,0,9,7;MQ=20;FQ=-31.9	GT:PL:DP:GQ	1/1:20,3,0:1:11	1/1:20,3,0:1:11	1/1:153,36,0:12:44	1/1:40,6,0:2:14	1/1:0,0,0:0:9
+chr10	185358	.	C	T	999	.	DP=27;VDB=7.438297e-03;AF1=1;AC1=10;DP4=0,0,11,16;MQ=20;FQ=-34.9	GT:PL:DP:GQ	1/1:87,15,0:5:27	1/1:36,6,0:2:18	1/1:165,42,0:14:54	1/1:98,18,0:6:30	1/1:0,0,0:0:12
+chr10	185876	.	G	T	999	.	DP=16;VDB=1.523952e-01;AF1=1;AC1=10;DP4=0,0,3,13;MQ=20;FQ=-31.8	GT:PL:DP:GQ	1/1:40,6,0:2:14	1/1:0,0,0:0:8	1/1:104,27,0:9:35	1/1:82,15,0:5:23	1/1:0,0,0:0:8
+chr10	186795	.	A	G	999	.	DP=31;VDB=2.111470e-01;AF1=1;AC1=10;DP4=0,0,13,17;MQ=20;FQ=-37.3	GT:PL:DP:GQ	1/1:85,15,0:5:29	1/1:36,6,0:2:20	1/1:187,57,0:19:71	1/1:36,6,0:2:20	1/1:40,6,0:2:20
+chr10	187565	.	T	C	999	.	DP=16;VDB=1.677441e-01;AF1=1;AC1=10;DP4=0,0,6,10;MQ=20;FQ=-34.8	GT:PL:DP:GQ	1/1:20,3,0:1:15	1/1:36,6,0:2:18	1/1:121,24,0:8:36	1/1:70,12,0:4:24	1/1:20,3,0:1:15
+chr10	188805	.	A	G	49.6	.	DP=24;VDB=1.371427e-01;RPB=3.191193e+00;AF1=0.4479;AC1=5;DP4=5,9,0,10;MQ=20;FQ=52.2;PV4=0.053,0.07,1,0.17	GT:PL:DP:GQ	0/0:0,3,20:1:4	0/1:11,0,31:3:13	0/1:48,0,101:17:50	0/0:0,3,20:1:4	1/1:36,6,0:2:4
+chr10	189810	.	A	G	91.7	.	DP=21;VDB=3.040410e-02;RPB=-7.087448e-01;AF1=0.4952;G3=9.329e-07,1,4.791e-07;HWE=0.0227;AC1=5;DP4=1,6,4,10;MQ=20;FQ=32.6;PV4=0.62,0.22,1,1	GT:PL:DP:GQ	0/1:11,0,31:3:14	0/1:10,0,14:2:12	0/1:98,0,12:14:16	0/1:14,0,14:2:14	0/1:0,0,0:0:3
+chr10	189815	.	A	G	30.1	.	DP=19;VDB=3.564564e-02;RPB=8.332051e-01;AF1=0.1623;AC1=1;DP4=3,10,2,4;MQ=20;FQ=30.9;PV4=1,0.03,1,1	GT:PL:DP:GQ	0/0:0,9,56:3:14	0/0:0,6,40:2:11	0/1:65,0,55:13:59	0/0:0,3,20:1:8	0/0:0,0,0:0:5
+chr10	189840	.	A	G	14.3	.	DP=20;VDB=6.541082e-02;RPB=2.007605e+00;AF1=0.1623;AC1=1;DP4=3,12,2,3;MQ=20;FQ=15;PV4=0.56,1,1,0.065	GT:PL:DP:GQ	0/0:0,9,52:3:14	0/0:0,6,40:2:11	0/1:49,0,63:14:44	0/0:0,3,20:1:8	0/0:0,0,0:0:6
+chr10	189947	.	TAAAAAAAAAAAAAA	TAAAAAAAAAAAAAAAA,TAAAAAAAAAAAAAAA	11.3	.	INDEL;IS=3,0.042254;DP=8;VDB=5.862095e-02;AF1=1;AC1=10;DP4=0,0,2,3;MQ=20;FQ=-34.6	GT:PL:DP:GQ	0/1:7,7,7,3,3,0:1:3	0/1:0,0,0,0,0,0:0:3	1/1:51,12,0,51,12,51:4:12	0/1:0,0,0,0,0,0:0:3	0/1:0,0,0,0,0,0:0:3
+chr10	190214	.	A	G	3.46	.	DP=18;VDB=8.284946e-02;RPB=-7.964914e-01;AF1=0.3322;AC1=3;DP4=11,3,4,0;MQ=20;FQ=4.49;PV4=1,0.16,1,1	GT:PL:DP:GQ	0/0:0,0,0:0:5	0/1:14,0,14:2:10	0/0:0,16,115:12:20	0/1:25,0,25:4:21	0/0:0,0,0:0:5
+chr10	190217	.	A	G	85.4	.	DP=13;VDB=1.375892e-01;RPB=-1.943855e+00;AF1=0.7961;AC1=8;DP4=3,0,10,0;MQ=20;FQ=-7.65;PV4=1,0.27,1,1	GT:PL:DP:GQ	1/1:0,0,0:0:3	1/1:36,6,0:2:8	0/1:53,0,26:9:25	1/1:36,6,0:2:8	1/1:0,0,0:0:3
+chr10	190390	.	A	G	161	.	DP=33;VDB=3.581590e-02;RPB=-9.106476e-02;AF1=0.5707;G3=1.408e-14,1,1.109e-05;HWE=0.0478;AC1=6;DP4=4,10,7,12;MQ=20;FQ=103;PV4=0.72,0.018,1,1	GT:PL:DP:GQ	1/1:15,3,0:1:3	0/1:14,0,14:2:14	0/1:111,0,81:21:83	0/1:63,0,46:9:48	0/1:0,0,0:0:3
+chr10	190851	.	T	C	107	.	DP=9;VDB=1.171281e-01;AF1=1;AC1=10;DP4=0,0,2,6;MQ=20;FQ=-30.5	GT:PL:DP:GQ	1/1:20,3,0:1:10	1/1:0,0,0:0:7	1/1:87,15,0:5:21	1/1:36,6,0:2:12	1/1:0,0,0:0:7
+chr10	192533	.	C	A	999	.	DP=26;VDB=2.525566e-01;AF1=1;AC1=10;DP4=0,0,15,11;MQ=20;FQ=-37.3	GT:PL:DP:GQ	1/1:36,6,0:2:20	1/1:87,15,0:5:29	1/1:121,24,0:8:38	1/1:134,30,0:10:44	1/1:20,3,0:1:17
+chr10	192709	.	A	G	999	.	DP=23;VDB=2.091115e-01;AF1=1;AC1=10;DP4=0,0,13,10;MQ=20;FQ=-37.2	GT:PL:DP:GQ	1/1:20,3,0:1:17	1/1:79,15,0:5:29	1/1:139,30,0:10:44	1/1:87,15,0:5:29	1/1:36,6,0:2:20
+chr10	194211	.	C	T	64.3	.	DP=29;VDB=1.208052e-01;RPB=3.321056e-01;AF1=0.4597;AC1=5;DP4=13,4,9,3;MQ=20;FQ=66.8;PV4=1,0.029,1,1	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:0,0,0:0:3	0/1:88,0,88:20:88	0/1:8,0,38:4:10	0/1:5,0,55:5:7
+chr10	195225	.	GTTATTATTATTATTATTATTATTATTATTATTATTATTATT	GTTATTATTATTATTATTATTATTATTATTATTATTATTATTATT	153	.	INDEL;IS=5,0.067568;DP=17;VDB=1.062717e-01;AF1=1;AC1=10;DP4=0,1,3,9;MQ=20;FQ=-38.2;PV4=1,1,1,0.36	GT:PL:DP:GQ	1/1:20,3,0:1:11	1/1:40,6,0:2:14	1/1:49,9,0:3:17	1/1:70,0,2:6:7	1/1:20,3,0:1:11
+chr10	196639	.	A	C	999	.	DP=96;VDB=3.147266e-01;RPB=-5.417371e-02;AF1=0.5209;AC1=5;DP4=25,32,18,19;MQ=20;FQ=999;PV4=0.68,1,1,1	GT:PL:DP:GQ	0/1:19,0,49:6:22	0/1:30,0,75:9:33	0/1:48,0,141:59:51	1/1:176,51,0:17:48	0/0:0,9,56:3:7
+chr10	197192	.	C	T	999	.	DP=175;VDB=5.220252e-01;AF1=1;AC1=10;DP4=0,0,89,83;MQ=20;FQ=-60.2	GT:PL:DP:GQ	1/1:162,48,0:16:85	1/1:147,36,0:12:73	1/1:219,255,0:108:99	1/1:205,84,0:28:99	1/1:117,24,0:8:61
+chr10	197808	.	T	C	999	.	DP=199;VDB=1.526810e-01;AF1=1;AC1=10;DP4=0,0,78,110;MQ=20;FQ=-54.5	GT:PL:DP:GQ	1/1:202,75,0:25:99	1/1:158,39,0:13:71	1/1:228,255,0:117:99	1/1:200,81,0:27:99	1/1:98,18,0:6:50
+chr10	198411	.	T	G	999	.	DP=186;VDB=2.551127e-01;AF1=1;AC1=10;DP4=0,0,102,80;MQ=20;FQ=-78.3	GT:PL:DP:GQ	1/1:187,57,0:19:99	1/1:189,60,0:20:99	1/1:206,255,0:99:99	1/1:199,90,0:30:99	1/1:154,42,0:14:97
+chr10	200144	.	A	G	999	.	DP=17;VDB=1.105813e-01;AF1=1;AC1=10;DP4=0,0,6,10;MQ=20;FQ=-37.6	GT:PL:DP:GQ	1/1:40,6,0:2:20	1/1:33,6,0:2:20	1/1:82,15,0:5:29	1/1:70,12,0:4:26	1/1:57,9,0:3:23
+chr10	200360	.	A	G	128	.	DP=10;VDB=1.304866e-01;AF1=1;AC1=10;DP4=0,0,2,7;MQ=20;FQ=-32.5	GT:PL:DP:GQ	1/1:0,0,0:0:9	1/1:20,3,0:1:12	1/1:40,6,0:2:15	1/1:57,9,0:3:18	1/1:49,9,0:3:18
+chr10	200964	.	G	A	45.5	.	DP=5;VDB=8.629164e-02;AF1=1;AC1=10;DP4=0,0,5,0;MQ=20;FQ=-28.5	GT:PL:DP:GQ	1/1:0,0,0:0:5	1/1:0,0,0:0:5	1/1:60,12,0:4:15	1/1:20,3,0:1:7	1/1:0,0,0:0:5
+chr10	201544	.	G	A	89.7	.	DP=7;VDB=9.310645e-02;AF1=1;AC1=10;DP4=0,0,2,5;MQ=20;FQ=-30.4	GT:PL:DP:GQ	1/1:20,3,0:1:9	1/1:0,0,0:0:7	1/1:70,12,0:4:18	1/1:36,6,0:2:12	1/1:0,0,0:0:7
+chr10	201578	.	G	A	5.77	.	DP=8;VDB=5.498856e-02;RPB=-4.570987e-01;AF1=0.369;AC1=4;DP4=2,3,1,2;MQ=20;FQ=7.33;PV4=1,1,1,1	GT:PL:DP:GQ	0/1:20,3,0:1:6	0/0:0,0,0:0:4	0/1:25,0,28:4:23	0/0:0,6,36:2:8	0/0:0,3,20:1:6
+chr10	202356	.	T	A	14.5	.	DP=4;VDB=6.695797e-02;RPB=8.435450e-01;AF1=0.7192;AC1=7;DP4=1,0,3,0;MQ=20;FQ=-16.6;PV4=1,1,1,1	GT:PL:DP:GQ	0/1:0,0,0:0:3	0/1:0,0,0:0:3	0/1:14,0,14:2:14	1/1:36,6,0:2:6	0/1:0,0,0:0:3
